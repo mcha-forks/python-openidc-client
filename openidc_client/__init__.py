@@ -107,7 +107,7 @@ class OpenIDCClient(object):
         self.client_secret = client_secret
         self.useragent = useragent or 'python-openid-client/%s' % \
             release.VERSION
-        self.cachedir = os.path.expanduser(cachedir or '~/.openidc')
+        self.cachedir = os.path.expanduser(cachedir or '~/.local/state/openidc')
         self.last_returned_uuid = None
         self.problem_reported = False
         self.token_to_try = None
